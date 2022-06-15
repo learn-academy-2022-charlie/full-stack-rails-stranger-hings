@@ -1,9 +1,9 @@
 class BlogController < ApplicationController
     def index
-        @main = Blog.all
+        @blogs = Blog.all
     end
 
     def show
-        @select = Blog.find(params[:id]) 
+        @blog = Blog.find(params[:id]) 
     end
 end
